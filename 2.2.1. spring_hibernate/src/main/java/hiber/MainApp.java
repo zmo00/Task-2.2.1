@@ -31,6 +31,13 @@ public class MainApp {
             System.out.println();
         }
 
+        List<User> userWithCar = userService.userWithCar("Toyota", 10);
+        System.out.println("__________");
+        for (User user : userWithCar) {
+            System.out.println(user.toString());
+            System.out.println();
+        }
+
         context.close();
     }
 }
