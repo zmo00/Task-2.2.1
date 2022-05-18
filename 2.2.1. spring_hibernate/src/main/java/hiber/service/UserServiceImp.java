@@ -20,12 +20,13 @@ public class UserServiceImp implements UserService {
       userDao.add(user);
    }
 
-   @Transactional(readOnly = true)
+   @Transactional
    @Override
    public List<User> listUsers() {
       return userDao.listUsers();
    }
 
+   @Transactional
    @Override
    public List<User> userWithCar(String model, int series) {
       return userDao.userWithCar(model, series);
