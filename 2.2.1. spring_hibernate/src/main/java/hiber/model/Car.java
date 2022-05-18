@@ -28,12 +28,6 @@ public class Car {
         this.series = series;
     }
 
-    public Car(String model, int series, User owner) {
-        this.model = model;
-        this.series = series;
-        this.owner = owner;
-    }
-
     public long getId() {
         return id;
     }
