@@ -24,10 +24,13 @@ public class User {
 
    public User() {}
 
-   public User(String firstName, String lastName, String email) {
+   public User(String firstName, String lastName, String email, Car car) {
       this.firstName = firstName;
       this.lastName = lastName;
       this.email = email;
+
+      car.setOwner(this);
+      this.setCar(car);
    }
 
    public Long getId() {
