@@ -20,7 +20,7 @@ public class MainApp {
         userService.add(new User("Alex", "Fominsky", "afominsky@gmail.com",
                 new Car("Porsche", 5)));
         userService.add(new User("Name", "Lastname", "lastname.n@email.web",
-                new Car("Lada", -3)));
+                new Car("Lada", 10)));
 
         List<User> users = userService.listUsers();
         System.out.println("__________");
